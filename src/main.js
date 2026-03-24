@@ -38,6 +38,11 @@ form.addEventListener('submit', async (e) => {
            
             if (totalHits > 15) {
                 render.showLoadMoreButton();
+            } else { 
+                iziToast.info({
+                    message: "We're sorry, but you've reached the end of search results."
+                });
+                render.showLoadMoreButton();
             }
         }
         e.target.reset();

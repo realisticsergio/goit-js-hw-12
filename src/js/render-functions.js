@@ -11,7 +11,6 @@ let lightbox = new SimpleLightbox('.gallery a', {
 });
 
 export function createGallery(images)  {
-  const galleryContainer = document.querySelector('.gallery');
     const markup = images
   .map(img => `
         <li class="gallery-item">
