@@ -1,8 +1,5 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
-
 import { getImagesByQuery } from './js/pixabay-api.js'; 
 import * as render from './js/render-functions.js';
 
@@ -42,7 +39,6 @@ form.addEventListener('submit', async (e) => {
                 iziToast.info({
                     message: "We're sorry, but you've reached the end of search results."
                 });
-                render.showLoadMoreButton();
             }
         }
         e.target.reset();
